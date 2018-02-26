@@ -9,7 +9,7 @@ docker run -d \
   --env AWS_ACCESS_KEY_ID=awsaccesskeyid \
   --env AWS_SECRET_ACCESS_KEY=awssecretaccesskey \
   --env BUCKET=s3bucket \
-  --env MONGODB_URI=mongodb.host \
+  --env MONGODB_URI=mongodb://db1.example.net:27017,db2.example.net:2500/?replicaSet=test \
   prcek/mongodb-backup-s3
 ```
 
@@ -20,7 +20,7 @@ docker run -d \
   --env AWS_ACCESS_KEY_ID=awsaccesskeyid \
   --env AWS_SECRET_ACCESS_KEY=awssecretaccesskey \
   --env BUCKET=s3bucket \
-  --env MONGODB_URI=mongodb.host \
+  --env MONGODB_URI=mongodb://db1.example.net:27017,db2.example.net:2500/?replicaSet=test \
   --env INIT_BACKUP=true \
   --env DISABLE_CRON=true \
   prcek/mongodb-backup-s3
