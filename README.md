@@ -38,7 +38,7 @@ docker run -d \
 
 `MONGODB_URI` - the uri of your mongodb database
 
-`CRON_TIME` - the interval of cron job to run mongodump. `0 3 * * *` by default, which is every day at 03:00hrs.
+`CRON_TIME` - the interval of cron job to run mongodump. `0 0 * * *` by default, which is every day at 00:00hrs (UTC)
 
 `TZ` - timezone. default: `US/Eastern`
 
